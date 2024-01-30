@@ -339,7 +339,7 @@ namespace HandBrakeWPF.Services
             defaults.Add(UserSettingConstants.DefaultPlayer, false);
 
             // Experimental
-            defaults.Add(UserSettingConstants.ProcessIsolationEnabled, true);
+            defaults.Add(UserSettingConstants.ProcessIsolationEnabled, false);
             defaults.Add(UserSettingConstants.ProcessIsolationPort, 8037);
             defaults.Add(UserSettingConstants.SimultaneousEncodes, 1);
 
