@@ -79,14 +79,8 @@ Function .onInit
   MessageBox MB_OK|MB_ICONEXCLAMATION "The installer is already running." /SD IDOK
   Abort
 
-  ; Detect if the installer is running on an unsupported version of windows.
-  ${IfNot} ${AtLeastBuild} 10240
-    MessageBox MB_OK "Windows 10 or later is required in order to run HandBrake. Old versions of HandBrake can be downloaded from handbrake.fr "
-    Quit
-  ${EndIf}
-
   ${IfNot} ${RunningX64}
-    MessageBox MB_OK "HandBrake requires a 64bit version of Windows 10 or later to install. Your system has a 32bit version of Windows."
+    MessageBox MB_OK "HandBrake requires a 64bit version of Windows to install. Your system has a 32bit version of Windows."
     Quit
   ${EndIf}
 
