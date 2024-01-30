@@ -1,4 +1,4 @@
-# HandBrake [![Windows Build](https://github.com/K4sum1/StickShift/workflows/Windows%20Build/badge.svg)](https://github.com/K4sum1/StickShift/actions?query=workflow%3A%22Windows+Build%22)
+# StickShift [![Windows Build](https://github.com/K4sum1/StickShift/workflows/Windows%20Build/badge.svg)](https://github.com/K4sum1/StickShift/actions?query=workflow%3A%22Windows+Build%22)
 
 
 StickShift is a fork of the HandBrake open-source video transcoder for Windows 7, licensed under the [GNU General Public License (GPL) Version 2](LICENSE).
