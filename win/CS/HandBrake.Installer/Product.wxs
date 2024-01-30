@@ -47,14 +47,6 @@
     <WixVariable Id="WixUIInfoIco" Value="..\HandBrakeWPF\handbrakepineapple.ico" />
     <WixVariable Id="WixUIUpIco" Value="..\HandBrakeWPF\handbrakepineapple.ico" />
     <WixVariable Id="WixUINewIco" Value="..\HandBrakeWPF\handbrakepineapple.ico" />
-
-    <!-- System Requirement Checks -->
-    <Property Id="WINDOWSBUILDNUMBER" Secure="yes">
-	    <RegistrySearch Id="BuildNumberSearch" Root="HKLM" Key="SOFTWARE\Microsoft\Windows NT\CurrentVersion" Name="CurrentBuildNumber" Type="raw" />
-    </Property>
-    <Condition Message="HandBrake is only supported on Windows 10 version 1909 (build 18363) or higher.">
-	    <![CDATA[(WINDOWSBUILDNUMBER >= 18363)]]>
-    </Condition>
     
     <!-- Install Files -->
     <Directory Id="TARGETDIR" Name="SourceDir">
