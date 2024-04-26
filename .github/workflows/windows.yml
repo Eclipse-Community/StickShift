@@ -110,11 +110,11 @@ jobs:
     - name: Upload StickShift exe Installer
       uses: actions/upload-artifact@v3
       with:
-        name: StickShift-x86_64-Win_GUI-EXE
-        path: win/CS/HandBrakeWPF/bin/publish/HandBrake-x86_64-Win_GUI.exe
+        name: StickShift-1.7.4-x86_64-Win_GUI-EXE
+        path: win/CS/HandBrakeWPF/bin/publish/StickShift-1.7.4-x86_64-Win_GUI.exe
 
     - name: Upload StickShift msi Installer
       uses: actions/upload-artifact@v3
       with:
-        name:  StickShift-x86_64-Win_GUI-MSI
-        path: win/CS/HandBrakeWPF/bin/publish/HandBrake-x86_64-Win_GUI.msi
+        name:  StickShift-1.7.4-x86_64-Win_GUI-MSI
+        path: win/CS/HandBrakeWPF/bin/publish/StickShift-1.7.4-x86_64-Win_GUI.msi
