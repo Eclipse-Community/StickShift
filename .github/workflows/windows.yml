@@ -107,14 +107,14 @@ jobs:
         $env:Path += ";C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin"
         msbuild win\cs\build.xml /t:x64 /p:PfxFile=$env:SigningCertificate /p:PfxPwd=${{ secrets.HandBrakeTeam_pfx_pwd }} /p:SignTimestampServer=http://time.certum.pl/
 
-    - name: Upload HandBrake exe Installer
+    - name: Upload StickShift exe Installer
       uses: actions/upload-artifact@v3
       with:
-        name: HandBrake-x86_64-Win_GUI-EXE
-        path: win/CS/HandBrakeWPF/bin/publish/HandBrake-Nightly-x86_64-Win_GUI.exe
+        name: StickShift-x86_64-Win_GUI-EXE
+        path: win/CS/HandBrakeWPF/bin/publish/StickShift-x86_64-Win_GUI.exe
 
-    - name: Upload HandBrake msi Installer
+    - name: Upload StickShift msi Installer
       uses: actions/upload-artifact@v3
       with:
-        name:  HandBrake-x86_64-Win_GUI-MSI
-        path: win/CS/HandBrakeWPF/bin/publish/HandBrake-Nightly-x86_64-Win_GUI.msi
+        name:  StickShift-x86_64-Win_GUI-MSI
+        path: win/CS/HandBrakeWPF/bin/publish/StickShift-x86_64-Win_GUI.msi
