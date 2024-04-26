@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>02684a37-c3e0-43f6-a4f0-2465afedd6df</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>HandBrake</OutputName>
+    <OutputName>StickShift</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

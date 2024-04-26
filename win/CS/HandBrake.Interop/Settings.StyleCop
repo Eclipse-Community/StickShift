@@ -55,8 +55,8 @@
         </Rule>
       </Rules>
       <AnalyzerSettings>
-        <StringProperty Name="CompanyName">HandBrake Project (https://handbrake.fr)</StringProperty>
-        <StringProperty Name="Copyright">This file is part of the HandBrake source code - It may be used under the terms of the GNU General Public License.</StringProperty>
+        <StringProperty Name="CompanyName">Eclipse Community</StringProperty>
+        <StringProperty Name="Copyright">This file is part of the StickShift source code - It may be used under the terms of the GNU General Public License.</StringProperty>
       </AnalyzerSettings>
     </Analyzer>
   </Analyzers>

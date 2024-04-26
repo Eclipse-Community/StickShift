@@ -1,13 +1,13 @@
 /*  Resources.Designer.cs $
 
- 	   This file is part of the HandBrake source code.
- 	   Homepage: <http://HandBrake.fr/>.
+ 	   This file is part of the StickShift source code.
+ 	   Homepage: <https://eclipse.cx/projects/stickshift.htm>.
  	   It may be used under the terms of the GNU General Public License. */
 
-!define PRODUCT_NAME "HandBrake"
+!define PRODUCT_NAME "StickShift"
 !define PRODUCT_VERSION "1.7.4"
 !define PRODUCT_VERSION_NUMBER "1.7.4"
-!define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\HandBrake.exe"
+!define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\StickShift.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
 
@@ -27,7 +27,7 @@ ManifestDPIAware true
 !define MUI_LICENSEPAGE_TEXT_BOTTOM "You are now aware of your rights. Click Next to continue."
 
 !define MUI_WELCOMEFINISHPAGE_BITMAP "InstallerBackground.bmp"
-!define MUI_TEXT_WELCOME_INFO_TEXT "Setup will guide you through the installation of HandBrake.$\r$\n$\r$\nIt is recommended you close any running instances of HandBrake before running setup.$\r$\n$\r$\nWARNING: Before updating, please make sure that there are no pending encodes in the Queue. Please make sure you have backed up any presets and made a note of your settings.$\r$\n$\r$\nHandBrake requires Microsoft .NET *Desktop* Runtime 6. If this is not installed, you will be prompted to install it when you first run the app."
+!define MUI_TEXT_WELCOME_INFO_TEXT "Setup will guide you through the installation of StickShift.$\r$\n$\r$\nIt is recommended you close any running instances of StickShift before running setup.$\r$\n$\r$\nWARNING: Before updating, please make sure that there are no pending encodes in the Queue. Please make sure you have backed up any presets and made a note of your settings.$\r$\n$\r$\nStickShift requires Microsoft .NET *Desktop* Runtime 6. If this is not installed, you will be prompted to install it when you first run the app."
 !define MUI_FINISHPAGE_RUN
 !define MUI_FINISHPAGE_RUN_TEXT "Create desktop shortcut (all users)"
 !define MUI_FINISHPAGE_RUN_FUNCTION "desktopShortcut"
@@ -41,7 +41,7 @@ ManifestDPIAware true
 ; Instfiles page
 !insertmacro MUI_PAGE_INSTFILES
 ; Finish page
-;!define MUI_FINISHPAGE_RUN "$INSTDIR\HandBrake.exe"
+;!define MUI_FINISHPAGE_RUN "$INSTDIR\StickShift.exe"
 !insertmacro MUI_PAGE_FINISH
 
 ; Uninstaller pages
@@ -53,14 +53,14 @@ ManifestDPIAware true
 ; MUI end ------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "HandBrake-${PRODUCT_VERSION_NUMBER}-x86_64-Win_GUI.exe"
+OutFile "StickShift-${PRODUCT_VERSION_NUMBER}-x86_64-Win_GUI.exe"
 
 !include WordFunc.nsh
 !insertmacro VersionCompare
 !include LogicLib.nsh
 !include x64.nsh
 
-InstallDir "$PROGRAMFILES64\HandBrake"
+InstallDir "$PROGRAMFILES64\StickShift"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
 ShowUnInstDetails show
@@ -80,7 +80,7 @@ Function .onInit
   Abort
 
   ${IfNot} ${RunningX64}
-    MessageBox MB_OK "HandBrake requires a 64bit version of Windows to install. Your system has a 32bit version of Windows."
+    MessageBox MB_OK "StickShift requires a 64bit version of Windows to install. Your system has a 32bit version of Windows."
     Quit
   ${EndIf}
 
@@ -106,7 +106,7 @@ Function .onInit
   done:
 FunctionEnd
 
-Section "HandBrake" SectionApp
+Section "StickShift" SectionApp
   SetOutPath "$INSTDIR"
   SetOverwrite ifnewer
   SectionIn RO ; Read only, always installed
@@ -123,20 +123,20 @@ Section "HandBrake" SectionApp
   
   ; Start Menu Shortcut for All users.   
   SetShellVarContext all
-  CreateDirectory "$SMPROGRAMS\HandBrake"
-  CreateShortCut "$SMPROGRAMS\HandBrake\HandBrake.lnk" "$INSTDIR\HandBrake.exe"
+  CreateDirectory "$SMPROGRAMS\StickShift"
+  CreateShortCut "$SMPROGRAMS\StickShift\StickShift.lnk" "$INSTDIR\StickShift.exe"
 SectionEnd
 
 Section -AdditionalIcons
-  CreateShortCut "$SMPROGRAMS\HandBrake\Uninstall.lnk" "$INSTDIR\uninst.exe"
+  CreateShortCut "$SMPROGRAMS\StickShift\Uninstall.lnk" "$INSTDIR\uninst.exe"
 SectionEnd
 
 Section -Post
   WriteUninstaller "$INSTDIR\uninst.exe"
-  WriteRegStr HKLM "${PRODUCT_DIR_REGKEY}" "" "$INSTDIR\HandBrake.exe"
+  WriteRegStr HKLM "${PRODUCT_DIR_REGKEY}" "" "$INSTDIR\StickShift.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\HandBrake.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\StickShift.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
 SectionEnd
 
@@ -164,25 +164,25 @@ Section Uninstall
 
   RMDir  "$INSTDIR"
 
-  Delete "$SMPROGRAMS\HandBrake\Uninstall.lnk"
-  Delete "$DESKTOP\HandBrake.lnk"
-  Delete "$SMPROGRAMS\HandBrake\HandBrake.lnk"
-  RMDir  "$SMPROGRAMS\HandBrake"
+  Delete "$SMPROGRAMS\StickShift\Uninstall.lnk"
+  Delete "$DESKTOP\StickShift.lnk"
+  Delete "$SMPROGRAMS\StickShift\StickShift.lnk"
+  RMDir  "$SMPROGRAMS\StickShift"
   RMDir  "$INSTDIR"
 
   DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"
   DeleteRegKey HKLM "${PRODUCT_DIR_REGKEY}"
   
   SetShellVarContext all
-  Delete "$SMPROGRAMS\HandBrake Nightly\Uninstall.lnk"
-  Delete "$SMPROGRAMS\HandBrake Nightly\HandBrake Nightly.lnk"
-  RMDir  "$SMPROGRAMS\HandBrake Nightly"
-  Delete "$DESKTOP\HandBrake Nightly.lnk"
+  Delete "$SMPROGRAMS\StickShift\Uninstall.lnk"
+  Delete "$SMPROGRAMS\StickShift\StickShift.lnk"
+  RMDir  "$SMPROGRAMS\StickShift"
+  Delete "$DESKTOP\StickShift.lnk"
   
   SetAutoClose true
 SectionEnd
 
 Function "desktopShortcut"
     SetShellVarContext all
-    CreateShortCut "$DESKTOP\HandBrake.lnk" "$INSTDIR\HandBrake.exe"
+    CreateShortCut "$DESKTOP\StickShift.lnk" "$INSTDIR\StickShift.exe"
 FunctionEnd

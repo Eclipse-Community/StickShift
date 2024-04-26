@@ -5,14 +5,14 @@
     <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
-    <PackageId>HandBrake</PackageId>
-    <Authors>HandBrake Team</Authors>
-    <Company>HandBrake Team</Company>
-    <Product>HandBrake</Product>
-    <Copyright>Copyright © 2003-2023 HandBrake Team</Copyright>
-    <Description>HandBrake is an open-source, GPL-licensed, multiplatform,video transcoder.</Description>
-    <PackageProjectUrl>https://handbrake.fr</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/HandBrake/HandBrake</RepositoryUrl>
+    <PackageId>StickShift</PackageId>
+    <Authors>Eclipse Community</Authors>
+    <Company>Eclipse Community</Company>
+    <Product>StickShift</Product>
+    <Copyright>Copyright © 2003-2024 Eclipse Community</Copyright>
+    <Description>StickShift is an open-source, GPL-licensed, multiplatform, video transcoder.</Description>
+    <PackageProjectUrl>https://eclipse.cx/projects/stickshift.htm</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Eclipse-Community/StickShift</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <AssemblyVersion>1.7.4.0</AssemblyVersion>
     <Version>1.7.4</Version>
@@ -20,7 +20,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ApplicationIcon>handbrakepineapple.ico</ApplicationIcon>
     <StartupObject />
-    <AssemblyName>HandBrake</AssemblyName>
+    <AssemblyName>StickShift</AssemblyName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <LangVersion>latest</LangVersion>

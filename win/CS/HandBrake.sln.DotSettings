@@ -762,8 +762,8 @@
 	<s:Boolean x:Key="/Default/CodeStyle/EditorConfig/EnableStyleCopSupport/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeStyle/EditorConfig/ShowEditorConfigStatusBarIndicator/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/CodeStyle/FileHeader/FileHeaderText/@EntryValue">--------------------------------------------------------------------------------------------------------------------&#xD;
-&lt;copyright file="$FILENAME$" company="HandBrake Project (https://handbrake.fr)"&gt;&#xD;
-  This file is part of the HandBrake source code - It may be used under the terms of the GNU General Public License.&#xD;
+&lt;copyright file="$FILENAME$" company="Eclipse Community"&gt;&#xD;
+  This file is part of the StickShift source code - It may be used under the terms of the GNU General Public License.&#xD;
 &lt;/copyright&gt;&#xD;
 &lt;summary&gt;&#xD;
   Defines&#xD;
