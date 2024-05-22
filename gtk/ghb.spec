@@ -6,7 +6,7 @@ Summary:	A program to transcode DVDs and other sources to MPEG-4
 
 Group:		Applications/Multimedia
 License:	GPLv2
-URL:		http://handbrake.fr/
+URL:		https://eclipse.cx/projects/stickshift.htm
 Source0:	%{name}-%{version}.tar.bz2
 Prefix:		%{_prefix}
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
@@ -18,8 +18,8 @@ Requires:	gtk3, coreutils
 %define debug_package %{nil}
 
 %description
-HandBrake is an open-source, GPL-licensed, multi-platform, multi-threaded 
-transcoder, available for MacOS X, Linux and Windows.
+StickShift is an open-source, GPL-licensed, multi-platform, multi-threaded 
+transcoder, available for Windows 7.
 
 %package gui
 Summary:	A program to transcode DVDs and other sources to MPEG-4
@@ -30,12 +30,12 @@ Summary:	A program to transcode DVDs and other sources to MPEG-4
 Group:		Applications/Multimedia
 
 %description gui
-HandBrake is an open-source, GPL-licensed, multi-platform, multi-threaded 
-transcoder, available for MacOS X, Linux and Windows.
+StickShift is an open-source, GPL-licensed, multi-platform, multi-threaded 
+transcoder, available for Windows 7.
 
 %description cli
-HandBrake is an open-source, GPL-licensed, multi-platform, multi-threaded 
-transcoder, available for MacOS X, Linux and Windows.
+StickShift is an open-source, GPL-licensed, multi-platform, multi-threaded 
+transcoder, available for Windows 7.
 
 %prep
 %setup -q

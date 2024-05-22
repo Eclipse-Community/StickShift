@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018-2024 John Stebbins <your@email.com> -->
+<!-- Copyright 2018-2024 Eclipse Community <webmaster@eclipse.cx> -->
 <component type="desktop-application">
   <id>fr.handbrake.ghb</id>
   <translation type="gettext">ghb</translation>
-  <developer_name>HandBrake Team</developer_name>
-  <update_contact>jstebbins.hb_AT_gmail.com</update_contact>
-  <launchable type="desktop-id">fr.handbrake.ghb.desktop</launchable>
+  <developer_name>Eclipse Community</developer_name>
+  <update_contact>webmaster_AT_eclipse.cx</update_contact>
+  <launchable type="desktop-id">fr.handbrake.ghb/desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
-  <name>HandBrake</name>
+  <name>StickShift</name>
   <summary>Video Transcoder</summary>
 
   <description>
-    <p>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</p>
-    <p>Reasons you'll love Handbrake:</p>
+    <p>StickShift is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</p>
+    <p>Reasons you'll love StickShift:</p>
     <ul>
       <li>Convert video from nearly any format</li>
       <li>Free and Open Source</li>
-      <li>Multi-Platform (Windows, Mac and Linux)</li>
+      <li>Supports Windows 7</li>
     </ul>
   </description>
 
-  <url type="homepage">https://handbrake.fr/</url>
-  <url type="help">https://handbrake.fr/docs/</url>
-  <url type="bugtracker">https://github.com/HandBrake/HandBrake/issues</url>
+  <url type="homepage">https://eclipse.cx/projects/stickshift.htm</url>
+  <url type="help">https://eclipse.cx/projects/stickshift.htm/</url>
+  <url type="bugtracker">https://github.com/Eclipse-Community/StickShift/issues</url>
   <url type="translate">https://www.transifex.com/HandBrakeProject/</url>
 
   <screenshots>
