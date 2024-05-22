@@ -46,14 +46,14 @@
                 <StackPanel Orientation="Horizontal" Grid.Row="1"  Margin="5,5,0,0">
                     <TextBlock Text="{x:Static Properties:Resources.AboutView_Website}" />
                     <TextBlock>           
-                        <Hyperlink x:Name="handbrakeWebsite" NavigateUri="/" RequestNavigate="HandbrakeWebsite_OnRequestNavigate"  >https://handbrake.fr</Hyperlink>
+                        <Hyperlink x:Name="handbrakeWebsite" NavigateUri="/" RequestNavigate="HandbrakeWebsite_OnRequestNavigate"  >https://eclipse.cx/projects/stickshift.htm</Hyperlink>
                     </TextBlock>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Grid.Row="2"  Margin="5,5,0,0">
                     <TextBlock Text="{x:Static Properties:Resources.AboutView_GithubTracker}" />
                     <TextBlock>           
-                        <Hyperlink x:Name="githubWebsite" NavigateUri="/" RequestNavigate="GithubWebsite_OnRequestNavigate"  >https://github.com/HandBrake/HandBrake/issues</Hyperlink>
+                        <Hyperlink x:Name="githubWebsite" NavigateUri="/" RequestNavigate="GithubWebsite_OnRequestNavigate"  >https://github.com/Eclipse-Community/StickShift/issues</Hyperlink>
                     </TextBlock>
                 </StackPanel>
 
