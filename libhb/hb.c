@@ -23,6 +23,7 @@
 
 #if defined( SYS_MINGW )
 #include <io.h>
+#define _WIN32_WINNT 0x600
 #if defined(PTW32_VERSION)
 #include <pthread.h>
 #endif
