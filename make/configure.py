@@ -6,8 +6,6 @@
 ##
 ###############################################################################
 
-set CL=/D_WIN32_WINNT=0x0600 /DWINVER=0x0600 %CL%
-
 import fnmatch
 import glob
 import json
@@ -24,6 +22,8 @@ from datetime import datetime, timedelta
 import argparse
 from sys import stderr
 from sys import stdout
+
+os.environ["CL"] = "/D_WIN32_WINNT=0x0600 /DWINVER=0x0600 " + os.environ.get("CL", "")
 
 class AbortError( Exception ):
     def __init__( self, format, *args ):
