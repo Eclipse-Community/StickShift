@@ -26,6 +26,8 @@ extern "C" {
 /* hb_init()
    Initializes a libhb session (launches his own thread, detects CPUs,
    etc) */
+#define WINVER 0x600
+#define _WIN32_WINNT 0x600
 #define HB_DEBUG_NONE 0
 #define HB_DEBUG_ALL  1
 #define HB_PREVIEW_FORMAT_YUV 0

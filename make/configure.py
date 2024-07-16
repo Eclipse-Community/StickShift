@@ -6,6 +6,8 @@
 ##
 ###############################################################################
 
+set CL=/D_WIN32_WINNT=0x0600 /DWINVER=0x0600 %CL%
+
 import fnmatch
 import glob
 import json
