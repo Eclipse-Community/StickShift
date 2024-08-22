@@ -55,7 +55,7 @@ jobs:
 
     - name: Build CLI and LibHB
       run: |
-        export PATH="/home/runner/work/HandBrake/HandBrake/toolchains/mingw-w64-toolchain-10.0.0-msvcrt-linux-x86_64/mingw-w64-x86_64/bin:${PATH}"
+        export PATH="/home/runner/work/StickShift/StickShift/toolchains/mingw-w64-toolchain-10.0.0-msvcrt-linux-x86_64/mingw-w64-x86_64/bin:${PATH}"
         export PATH=/usr/bin:$PATH
         ./configure --cross=x86_64-w64-mingw32 --enable-qsv --enable-vce --enable-nvenc --enable-nvdec --launch-jobs=0 --launch
         cd build

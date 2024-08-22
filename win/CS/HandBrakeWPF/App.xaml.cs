@@ -65,14 +65,6 @@ namespace HandBrakeWPF
                 return;
             }
 
-            // We don't support Windows earlier than 10.
-            if (!SystemInfo.IsWindows10OrLater())
-            {
-                MessageBox.Show(HandBrakeWPF.Properties.Resources.OsVersionWarning, HandBrakeWPF.Properties.Resources.Warning, MessageBoxButton.OK, MessageBoxImage.Warning);
-                Application.Current.Shutdown();
-                return;
-            }
-
             if (!Environment.Is64BitOperatingSystem)
             {
                 MessageBox.Show(HandBrakeWPF.Properties.Resources.OsBitnessWarning, HandBrakeWPF.Properties.Resources.Warning, MessageBoxButton.OK, MessageBoxImage.Warning);
