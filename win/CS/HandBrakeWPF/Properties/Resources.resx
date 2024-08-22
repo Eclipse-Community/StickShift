@@ -195,10 +195,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
     <value>Are you sure?</value>
   </data>
   <data name="HandBrake_Title" xml:space="preserve">
-    <value>HandBrake</value>
+    <value>StickShift</value>
   </data>
   <data name="Main_AlreadyEncoding" xml:space="preserve">
-    <value>HandBrake is already encoding.</value>
+    <value>StickShift is already encoding.</value>
   </data>
   <data name="Main_DuplicateDestinationOnQueue" xml:space="preserve">
     <value>There are jobs on the queue with the same destination path. Please choose a different path for this job.
@@ -243,7 +243,7 @@ You may wish to configure the automatic file naming options in "Tools Menu -&gt;
     <value>The Preset has now been updated with your current settings.</value>
   </data>
   <data name="Main_PresetUpdateNotification" xml:space="preserve">
-    <value>HandBrake has determined your built-in presets are out of date... These presets will now be updated.
+    <value>StickShift has determined your built-in presets are out of date... These presets will now be updated.
 Your custom presets have not been updated so you may have to re-create these by deleting and re-adding them. 
 The previous user_presets.xml file was backed up.</value>
   </data>
@@ -302,7 +302,7 @@ The previous user_presets.xml file was backed up.</value>
     <value>Preset Version</value>
   </data>
   <data name="Preset_OldVersion_Message" xml:space="preserve">
-    <value>The preset you are trying to import is from a different version of HandBrake. 
+    <value>The preset you are trying to import is from a different version of StickShift. 
  It may not be possible to import all the values from this preset. 
 
 Do you wish to proceed?</value>
@@ -311,7 +311,7 @@ Do you wish to proceed?</value>
     <value>Unable to import preset!</value>
   </data>
   <data name="Preset_UnableToImport_Message" xml:space="preserve">
-    <value>Unable to import the preset as it appears to be corrupted or from an older version of HandBrake.</value>
+    <value>Unable to import the preset as it appears to be corrupted or from an older version of StickShift.</value>
   </data>
   <data name="Main_SetDestination" xml:space="preserve">
     <value>You must first set the destination path for the output file before adding to the queue.</value>
@@ -332,16 +332,16 @@ Do you wish to proceed?</value>
     <value>You cannot encode to a file with the same path and filename as the source file. Please update the destination filename so that it does not match the source file.</value>
   </data>
   <data name="Main_UnableToLoadHelpMessage" xml:space="preserve">
-    <value>Your system prevented HandBrake from launching a web browser.</value>
+    <value>Your system prevented StickShift from launching a web browser.</value>
   </data>
   <data name="Main_UnableToLoadHelpSolution" xml:space="preserve">
-    <value>You can still access the help pages by visiting the website directly at: https://handbrake.fr</value>
+    <value>You can still access the help pages by visiting the website directly at: https://eclipse.cx/projects/stickshift.htm</value>
   </data>
   <data name="Main_PresetImportFailed" xml:space="preserve">
     <value>Unable to import the selected preset.</value>
   </data>
   <data name="Main_PresetImportFailedSolution" xml:space="preserve">
-    <value>The preset may be corrupted or from an older version of HandBrake which is not supported. 
+    <value>The preset may be corrupted or from an older version of StickShift which is not supported. 
 Presets from older versions must be re-created in the current version.</value>
   </data>
   <data name="Video_EncoderExtraArgsTooltip" xml:space="preserve">
@@ -357,7 +357,7 @@ Foreign Audio Preferred, else First - If the foreign audio track exists, it will
     <value>WebM Subtitle Compatibility</value>
   </data>
   <data name="Subtitles_WebmSubtitleIncompatibilityError" xml:space="preserve">
-    <value>WebM in HandBrake only supports burned subtitles.
+    <value>WebM in StickShift only supports burned subtitles.
 
 You should change your subtitle selections.
 
@@ -367,12 +367,12 @@ If you continue, your non-burned subtitles will be lost.</value>
     <value>No valid source or titles found.</value>
   </data>
   <data name="Main_ScanNoTitlesFoundMessage" xml:space="preserve">
-    <value>HandBrake will not be able to encode the selected source as it did not find a valid source with titles to encode. This could be due to one of the following reasons:
+    <value>StickShift will not be able to encode the selected source as it did not find a valid source with titles to encode. This could be due to one of the following reasons:
 
 - The duration of each source title is below the "Minimum Title Duration" threshold option in 'Preferences &gt; Advanced'. 
-- The source file is not a valid video file or is in a format that HandBrake does not support.
+- The source file is not a valid video file or is in a format that StickShift does not support.
 - You may not have read access to the file or another application may have a lock on the file. 
-- The source may be copy protected or include DRM. Please note that HandBrake does not support the removal of copy protections.
+- The source may be copy protected or include DRM. Please note that StickShift does not support the removal of copy protections.
 
 The Activity log may have further information.</value>
   </data>
@@ -434,7 +434,7 @@ The Activity log may have further information.</value>
     <value>The following action '{0}' will occur in {1} seconds.</value>
   </data>
   <data name="ErrorViewModel_IfTheProblemPersists" xml:space="preserve">
-    <value>If the problem persists, please try restarting HandBrake.</value>
+    <value>If the problem persists, please try restarting StickShift.</value>
   </data>
   <data name="ErrorViewModel_NoFurtherInformation" xml:space="preserve">
     <value>There is no further information available about this error.</value>
@@ -446,7 +446,7 @@ The Activity log may have further information.</value>
     <value>A New Update is Available! Please check the website for release notes.</value>
   </data>
   <data name="OptionsViewModel_64bitAvailable" xml:space="preserve">
-    <value>Your system supports the 64bit version of HandBrake! This offers performance and stability improvements over this 32bit version.
+    <value>Your system supports the 64bit version of StickShift! This offers performance and stability improvements over this 32bit version.
     Please check the website for release notes.</value>
   </data>
   <data name="OptionsViewModel_NoNewUpdates" xml:space="preserve">
@@ -456,10 +456,10 @@ The Activity log may have further information.</value>
     <value>Update Downloaded</value>
   </data>
   <data name="OptionsViewModel_UpdateServiceUnavailable" xml:space="preserve">
-    <value>Update Service Unavailable. You can try downloading the update from https://handbrake.fr</value>
+    <value>Update Service Unavailable. You can try downloading the update from https://eclipse.cx/projects/stickshift.htm</value>
   </data>
   <data name="OptionsViewModel_UpdateFailed" xml:space="preserve">
-    <value>Update Failed. You can try downloading the update from https://handbrake.fr</value>
+    <value>Update Failed. You can try downloading the update from https://eclipse.cx/projects/stickshift.htm</value>
   </data>
   <data name="PictureSettingsViewModel_StorageDisplayLabel" xml:space="preserve">
     <value>Storage Size: {0}x{1}</value>
@@ -520,8 +520,8 @@ No encoded files will be deleted with this operation. </value>
     <value>Encoding: Pass {0} of {1},  {2:00.00}%, FPS: {3:000.0},  Avg FPS: {4:000.0},  Time Remaining: {5},  Elapsed: {6:d\:hh\:mm\:ss}</value>
   </data>
   <data name="ShellViewModel_CanClose" xml:space="preserve">
-    <value>An Encode is currently running. Exiting HandBrake will stop this encode.
-Are you sure you wish to exit HandBrake?</value>
+    <value>An Encode is currently running. Exiting StickShift will stop this encode.
+Are you sure you wish to exit StickShift?</value>
   </data>
   <data name="StaticPreviewViewModel_Title" xml:space="preserve">
     <value>Picture Preview</value>
@@ -536,7 +536,7 @@ Are you sure you wish to exit HandBrake?</value>
     <value>Unable to find the preview file. Either the file was deleted or the encode failed. Check the activity log for details.</value>
   </data>
   <data name="StaticPreviewViewModel_AlreadyEncoding" xml:space="preserve">
-    <value>Handbrake is already encoding a video! Only one file can be encoded at any one time.</value>
+    <value>StickShift is already encoding a video! Only one file can be encoded at any one time.</value>
   </data>
   <data name="SubtitlesViewModel_SubDefaults" xml:space="preserve">
     <value>Subtitle Defaults</value>
@@ -557,7 +557,7 @@ Are you sure you wish to exit HandBrake?</value>
     <value>Unable to load presets.</value>
   </data>
   <data name="PresetService_UnableToLoadPresets" xml:space="preserve">
-    <value>HandBrake was unable to load your presets file. It may have been from an older unsupported version of HandBrake or corrupted. 
+    <value>StickShift was unable to load your presets file. It may have been from an older unsupported version of StickShift or corrupted. 
 
 Your old presets file was archived to:</value>
   </data>
@@ -568,7 +568,7 @@ Your old presets file was archived to:</value>
     <value>Low Disk Space</value>
   </data>
   <data name="MainViewModel_LowDiskSpaceWarning" xml:space="preserve">
-    <value>Warning, you are running low on disk space. HandBrake will not be able to complete this encode if you run out of space. </value>
+    <value>Warning, you are running low on disk space. StickShift will not be able to complete this encode if you run out of space. </value>
   </data>
   <data name="ChaptersViewModel_UnableToImportChaptersMalformedLineMsg" xml:space="preserve">
     <value>Line {0} is invalid. Nothing will be imported.</value>
@@ -618,14 +618,14 @@ Are you sure you want to import the chapter names?</value>
     <value>Chapter duration doesn't match between source and input file</value>
   </data>
   <data name="ScanService_ScanStopFailed" xml:space="preserve">
-    <value>An error occurred when trying to stop the scan. Please restart HandBrake.</value>
+    <value>An error occurred when trying to stop the scan. Please restart StickShift.</value>
   </data>
   <data name="Presets_PresetForceReset" xml:space="preserve">
-    <value>HandBrake is unable to upgrade your presets file to a new version format.
+    <value>StickShift is unable to upgrade your presets file to a new version format.
 Your preset file will be archived and new one created. You will need to re-create your own presets.</value>
   </data>
   <data name="SettingService_SaveErrorReset" xml:space="preserve">
-    <value>Any settings you changed may need to be reset the next time HandBrake launches.</value>
+    <value>Any settings you changed may need to be reset the next time StickShift launches.</value>
   </data>
   <data name="UserSettings_AnErrorOccurred" xml:space="preserve">
     <value>A problem occurred when trying to save your preferences.</value>
@@ -640,7 +640,7 @@ Your preset file will be archived and new one created. You will need to re-creat
     <value>Unable to load user settings file: {0}</value>
   </data>
   <data name="UserSettings_UnableToLoadSolution" xml:space="preserve">
-    <value>Your user settings file appears to be inaccessible or corrupted. You may have to delete the file and let HandBrake generate a new one.</value>
+    <value>Your user settings file appears to be inaccessible or corrupted. You may have to delete the file and let StickShift generate a new one.</value>
   </data>
   <data name="Main_NoPermissionsOrMissingDirectory" xml:space="preserve">
     <value>The output directory you have chosen either does not exist, or you do not have permissions to write files to it.</value>
@@ -649,7 +649,7 @@ Your preset file will be archived and new one created. You will need to re-creat
     <value>Create Folder?</value>
   </data>
   <data name="DirectoryUtils_CreateFolderMsg" xml:space="preserve">
-    <value>The folder you are trying to write to does not exist. Would you like HandBrake to create the following folder?
+    <value>The folder you are trying to write to does not exist. Would you like StickShift to create the following folder?
 {0}</value>
   </data>
   <data name="MainViewModel_UnableToLaunchDestDir" xml:space="preserve">
@@ -694,22 +694,22 @@ Do you wish to continue? </value>
     <value>Unable to restore queue file.</value>
   </data>
   <data name="Queue_UnableToRestoreFileExtended" xml:space="preserve">
-    <value>The file may be corrupted or from an older incompatible version of HandBrake</value>
+    <value>The file may be corrupted or from an older incompatible version of StickShift</value>
   </data>
   <data name="Queue_AlreadyEncoding" xml:space="preserve">
-    <value>HandBrake is already encoding a file.</value>
+    <value>StickShift is already encoding a file.</value>
   </data>
   <data name="Queue_AlreadyEncodingSolution" xml:space="preserve">
-    <value>Please stop the current encode. If the problem persists, please restart HandBrake.</value>
+    <value>Please stop the current encode. If the problem persists, please restart StickShift.</value>
   </data>
   <data name="StaticPreviewView_Title" xml:space="preserve">
     <value>Preview ({0}% actual size)</value>
   </data>
   <data name="OsBitnessWarning" xml:space="preserve">
-    <value>HandBrake requires a 64bit version of Windows 10 or later to run.</value>
+    <value>StickShift requires a 64bit version of Windows 10 or later to run.</value>
   </data>
   <data name="OsVersionWarning" xml:space="preserve">
-    <value>HandBrake requires Windows 10 or later to run. Version 0.9.9 (XP), 0.10.5 (Vista), 1.3.3 (7 and 8.x) were the last versions to support these older operating systems.</value>
+    <value>StickShift requires Windows 7 or later to run. Version 0.9.9 (XP) and 0.10.5 (Vista) were the last versions to support these older operating systems.</value>
   </data>
   <data name="Main_ContinueAddingToQueue" xml:space="preserve">
     <value>Do you wish to proceed trying to add the rest?</value>
@@ -1150,7 +1150,7 @@ Hint: File overwrite behaviour can be controlled in preferences. </value>
     <value>Clear Log files older than 7 days</value>
   </data>
   <data name="Options_About" xml:space="preserve">
-    <value>About HandBrake</value>
+    <value>About StickShift</value>
   </data>
   <data name="Options_Advanced" xml:space="preserve">
     <value>Advanced</value>
@@ -1445,7 +1445,7 @@ VLC and MPC-HC are supported. Other players may also work but are not validated.
     <value>Picture Settings:</value>
   </data>
   <data name="WhenDone_QuitHandBrake" xml:space="preserve">
-    <value>Quit HandBrake</value>
+    <value>Quit StickShift</value>
   </data>
   <data name="QueueView_ResetAllJobs" xml:space="preserve">
     <value>Retry All Jobs</value>
@@ -1700,7 +1700,7 @@ VLC and MPC-HC are supported. Other players may also work but are not validated.
     <value>Use System Language</value>
   </data>
   <data name="SourceSelection_AboutHandBrake" xml:space="preserve">
-    <value>About HandBrake</value>
+    <value>About StickShift</value>
   </data>
   <data name="SourceSelection_DropFileHere" xml:space="preserve">
     <value>Or drop a file, set of files or folder here ...</value>
@@ -1748,7 +1748,7 @@ VLC and MPC-HC are supported. Other players may also work but are not validated.
     <value>_File</value>
   </data>
   <data name="MainView_HandBrakeDocs" xml:space="preserve">
-    <value>_HandBrake Documentation (HTTPS)</value>
+    <value>_StickShift Documentation (HTTPS)</value>
   </data>
   <data name="MainView_HelpMenu" xml:space="preserve">
     <value>_Help</value>
@@ -1793,7 +1793,7 @@ VLC and MPC-HC are supported. Other players may also work but are not validated.
     <value>Downloading...</value>
   </data>
   <data name="OptionsView_LogsCleared" xml:space="preserve">
-    <value>HandBrake's Log file directory has been cleared!</value>
+    <value>StickShift's Log file directory has been cleared!</value>
   </data>
   <data name="OptionsView_Notice" xml:space="preserve">
     <value>Notice</value>
@@ -1832,7 +1832,7 @@ VLC and MPC-HC are supported. Other players may also work but are not validated.
     <value>Show 'Add Selection to Queue' on the toolbar</value>
   </data>
   <data name="OptionsView_HardwareDetectFailed" xml:space="preserve">
-    <value>Hardware encoding support is currently disabled. If you did not start HandBrake with the "--no-hardware" option, please make sure you are running up-to-date drivers for all graphics adaptors in this system.
+    <value>Hardware encoding support is currently disabled. If you did not start StickShift with the "--no-hardware" option, please make sure you are running up-to-date drivers for all graphics adaptors in this system.
 
 This will not impact any of the software encoders.</value>
   </data>
@@ -1920,10 +1920,10 @@ You can drag/drop or enter the text above.</value>
     <value>Choice of encoder will be made available on the 'Video' tab.</value>
   </data>
   <data name="Queue_RecoverQueueQuestionPlural" xml:space="preserve">
-    <value>HandBrake has detected multiple unfinished queue files. These will be from multiple instances of HandBrake running. Would you like to recover all unfinished jobs?</value>
+    <value>StickShift has detected multiple unfinished queue files. These will be from multiple instances of StickShift running. Would you like to recover all unfinished jobs?</value>
   </data>
   <data name="Queue_RecoverQueueQuestionSingular" xml:space="preserve">
-    <value>HandBrake has detected unfinished items on the queue from the last time the application was launched. Would you like to recover these?</value>
+    <value>StickShift has detected unfinished items on the queue from the last time the application was launched. Would you like to recover these?</value>
   </data>
   <data name="Queue_RecoveryPossible" xml:space="preserve">
     <value>Queue Recovery Possible</value>
@@ -2138,7 +2138,7 @@ Where supported, any user presets will have been imported.</value>
     <value>A new version is available!</value>
   </data>
   <data name="About_Copyright" xml:space="preserve">
-    <value>Copyright (C) 2003-2024 The HandBrake Team</value>
+    <value>Copyright (C) 2003-2024 Eclipse Community</value>
   </data>
   <data name="Options_LowBatteryLevel" xml:space="preserve">
     <value>Low battery level:</value>
@@ -2200,7 +2200,7 @@ Please choose a different preset.</value>
     <value>Reset Settings</value>
   </data>
   <data name="OptionsViewModel_ResetHandBrakeQuestion" xml:space="preserve">
-    <value>Are you sure you wish to reset HandBrake to default settings?</value>
+    <value>Are you sure you wish to reset StickShift to default settings?</value>
   </data>
   <data name="PaddingMode_Custom" xml:space="preserve">
     <value>Custom (Not Limited)</value>
@@ -2404,7 +2404,7 @@ Please choose a different preset.</value>
     <value>Missing file "hb.dll". Please re-install.</value>
   </data>
   <data name="OptionsView_SafeMode" xml:space="preserve">
-    <value>Warning: Please note that this is a "Safe Mode" build of HandBrake that does not include support for hardware encoders. If you wish to use hardware encoder support, please download a non-"Safe Mode" build from the website.</value>
+    <value>Warning: Please note that this is a "Safe Mode" build of StickShift that does not include support for hardware encoders. If you wish to use hardware encoder support, please download a non-"Safe Mode" build from the website.</value>
   </data>
   <data name="PadColour_Black" xml:space="preserve">
     <value>Black</value>
@@ -2452,7 +2452,7 @@ Please choose a different preset.</value>
     <value>The default auto name path was not valid. {0} must not be before {1}</value>
   </data>
   <data name="FirstRun_EnableUpdateCheck" xml:space="preserve">
-    <value>Would you like to allow HandBrake to automatically check for updates?
+    <value>Would you like to allow StickShift to automatically check for updates?
 
 You can change your choice at any time by changing the options in Preferences -&gt; General -&gt; Check for Updates</value>
   </data>
@@ -2519,13 +2519,13 @@ You can change your choice at any time by changing the options in Preferences -&
     <value>Are you sure you wish to reset all built-in presets?</value>
   </data>
   <data name="OptionsView_ResetBuildInPresets" xml:space="preserve">
-    <value>Reset all built-in presets to HandBrake defaults:</value>
+    <value>Reset all built-in presets to StickShift defaults:</value>
   </data>
   <data name="OptionsView_ResetBuildInPresetsNotice" xml:space="preserve">
     <value>(User presets will not be reset)</value>
   </data>
   <data name="OptionsView_ResetSettingsToDefaults" xml:space="preserve">
-    <value>Reset all HandBrake settings back to defaults:</value>
+    <value>Reset all StickShift settings back to defaults:</value>
   </data>
   <data name="Options_BuiltInPresets" xml:space="preserve">
     <value>Built In Presets</value>
@@ -2543,20 +2543,20 @@ You can change your choice at any time by changing the options in Preferences -&
     <value>Unable to read the queue file.</value>
   </data>
   <data name="QueueViewModel_ImportFailSolution" xml:space="preserve">
-    <value>The file may be corrupted or from an earlier version of HandBrake. 
+    <value>The file may be corrupted or from an earlier version of StickShift. 
 Only queue files from the current version are supported.</value>
   </data>
   <data name="Notifications_EncodeDone" xml:space="preserve">
-    <value>Your HandBrake encode is done!</value>
+    <value>Your StickShift encode is done!</value>
   </data>
   <data name="Notifications_QueueDone" xml:space="preserve">
-    <value>Your HandBrake queue is done!</value>
+    <value>Your StickShift queue is done!</value>
   </data>
   <data name="OptionsView_NotificationRemovalSubText" xml:space="preserve">
     <value>This will also disable the show windows taskbar notifications options on the 'When Done' tab. Re-enable these if you want to re-activate this feature.</value>
   </data>
   <data name="OptionsView_NotificationRemovalText" xml:space="preserve">
-    <value>Remove HandBrake from the Windows notifications control panel.</value>
+    <value>Remove StickShift from the Windows notifications control panel.</value>
   </data>
   <data name="OptionsView_UninstallMessageBoxHeader" xml:space="preserve">
     <value>Uninstalled</value>
@@ -2616,23 +2616,23 @@ Only queue files from the current version are supported.</value>
     <value>Prefers the use of multiple media engines to speed up a single encode where supported. Disable to allow load balancing multiple parallel encodes across media engines.</value>
   </data>
   <data name="MainView_OpenHandBrake" xml:space="preserve">
-    <value>Open HandBrake</value>
+    <value>Open StickShift</value>
   </data>
   <data name="Startup_UnableToStartInfo" xml:space="preserve">
     <value>Hardware encoding support has been disabled as it is a common cause of start-up issues.
-- Please try restarting HandBrake. 
+- Please try restarting StickShift. 
 - If the problem persists, it may be an out-of-date graphics card driver (onboard or discrete) that is causing the problem.
 
 Hardware encoding support can be re-enabled in preferences. </value>
   </data>
   <data name="Startup_UnableToStart" xml:space="preserve">
-    <value>HandBrake was unable to start.</value>
+    <value>StickShift was unable to start.</value>
   </data>
   <data name="OptionsView_ResetSafeMode" xml:space="preserve">
     <value>Reset Safe Mode</value>
   </data>
   <data name="OptionsView_ResetSafeModeMessage" xml:space="preserve">
-    <value>Please restart HandBrake.</value>
+    <value>Please restart StickShift.</value>
   </data>
   <data name="Debug_QueueDataExport" xml:space="preserve">
     <value>Export Queue Statistics Data (csv)</value>

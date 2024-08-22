@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-// <copyright project="HandBrake.Installer" team="HandBrake Project (http://handbrake.fr)">
+// <copyright project="HandBrake.Installer" team="Eclipse Community">
 //   This file is part of the HandBrake source code - It may be used under the terms of the MIT License.
 //   This project is NOT included under the HandBrake applications GPLv2 license. 
 // </copyright>
@@ -11,19 +11,19 @@
 
   <?if $(var.Configuration)=Debug ?>
     <?define msiProductId = "fd19ef0e-77c4-47a6-b1e4-4cea0b3a4c94" ?>
-    <?define productName = "HandBrake Nightly" ?>
-    <?define installDir = "Nightly" ?>
+    <?define productName = "StickShift" ?>
+    <?define installDir = "StickShift" ?>
     <?define ToastActivatorCLSID = "" ?>
     <?define packagePath = "..\HandBrakeWPF\bin\publish" ?>
   <?else ?>
     <?define msiProductId = "fd19ef0e-77c4-47a6-b1e4-4cea0b3a4c93" ?>
-    <?define productName = "HandBrake" ?>
-    <?define installDir = "HandBrake" ?>
+    <?define productName = "StickShift" ?>
+    <?define installDir = "StickShift" ?>
     <?define ToastActivatorCLSID = "" ?>
     <?define packagePath = "..\HandBrakeWPF\bin\publish" ?>
   <?endif ?>
 
-  <Product Id="$(var.msiProductId)" Name="$(var.productName)" Language="1033" Version="1.6.1.0" Manufacturer="HandBrake Team" UpgradeCode="$(var.msiProductId)">
+  <Product Id="$(var.msiProductId)" Name="$(var.productName)" Language="1033" Version="1.6.1.0" Manufacturer="Eclipse Community" UpgradeCode="$(var.msiProductId)">
     <Package InstallerVersion="200" Platform="x64" Compressed="yes" InstallScope="perMachine" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -33,8 +33,8 @@
     <Icon Id="ProductIcon" SourceFile="..\HandBrakeWPF\handbrakepineapple.ico"/>
 
     <Property Id="ARPPRODUCTICON" Value="ProductIcon"/>
-    <Property Id="ARPHELPLINK" Value="https://www.handbrake.fr/docs"/>
-    <Property Id="ARPURLINFOABOUT" Value="https://www.handbrake.fr"/>
+    <Property Id="ARPHELPLINK" Value="https://github.com/Eclipse-Community/StickShift/issues"/>
+    <Property Id="ARPURLINFOABOUT" Value="https://eclipse.cx/projects/stickshift.htm"/>
     <Property Id="ARPNOREPAIR" Value="1"/>
     <Property Id="WIXUI_INSTALLDIR" Value="APPDIR" />
 
@@ -52,13 +52,13 @@
     <Directory Id="TARGETDIR" Name="SourceDir">
 
       <Directory Id="ProgramFiles64Folder">
-        <Directory Id="INSTALLDIR" Name="HandBrakeTeam">
+        <Directory Id="INSTALLDIR" Name="StickShift">
           <Directory Id="APPDIR" Name="$(var.installDir)">
 
             <Component Win64="yes" Id="ApplicationFiles" Guid="cbae29e7-6d39-49bb-8c76-0305c3d42181">
               <!-- Core Application -->
-              <File Source="$(var.packagePath)\HandBrake.exe" />
-              <File Source="$(var.packagePath)\HandBrake.Worker.exe" />
+              <File Source="$(var.packagePath)\StickShift.exe" />
+              <File Source="$(var.packagePath)\StickShift.Worker.exe" />
               <File Source="$(var.packagePath)\hb.dll"/>
               <File Source="$(var.packagePath)\portable.ini.template"/>
             </Component>
@@ -78,9 +78,9 @@
       <Component Id="AppShortcuts" Win64="yes">
 
         <!-- Shortcuts for the shell -->
-        <Shortcut Id="SCUT_Shortcuts_Shell" Name="$(var.productName)" Target="[#HandBrake.exe]" WorkingDirectory="APPLICATIONROOTDIRECTORY">
+        <Shortcut Id="SCUT_Shortcuts_Shell" Name="$(var.productName)" Target="[#StickShift.exe]" WorkingDirectory="APPLICATIONROOTDIRECTORY">
           <!--AUMID-->
-          <ShortcutProperty Key="System.AppUserModel.ID" Value="HandBrakeTeam.$(var.productName)"/>
+          <ShortcutProperty Key="System.AppUserModel.ID" Value="StickShift.$(var.productName)"/>
           <!--COM CLSID-->
           <ShortcutProperty Key="System.AppUserModel.ToastActivatorCLSID" Value="{cbae29e7-6d39-49bb-8c76-0305c3d42181}"/>
         </Shortcut>
@@ -88,7 +88,7 @@
         <!-- Uninstall shortcut -->
         <Shortcut Id="SCUT_Shortcuts_Uninstall" Name="Uninstall $(var.productName)" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
         <RemoveFolder Id="REMOVE_Shortcuts" On="uninstall" />
-        <RegistryValue Root="HKCU" Key="Software\HandBakeTeam\$(var.installDir)" Name="installedShortcut" Type="integer" Value="1" KeyPath="yes" />
+        <RegistryValue Root="HKCU" Key="Software\StickShift\$(var.installDir)" Name="installedShortcut" Type="integer" Value="1" KeyPath="yes" />
 
       </Component>
     </DirectoryRef>

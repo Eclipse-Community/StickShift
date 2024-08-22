@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=HandBrake
+Name=StickShift
 GenericName=Media Transcoder
 Comment=Transcodes DVD, Blu-ray, and other media
 Exec=ghb %f

@@ -38,12 +38,12 @@ namespace HandBrakeWPF.Views
         /// </param>
         private void HandbrakeWebsite_OnRequestNavigate(object sender, RequestNavigateEventArgs e)
         {
-            Process.Start("explorer.exe", "https://handbrake.fr");
+            Process.Start("explorer.exe", "https://eclipse.cx/projects/stickshift.htm");
         }
 
         private void GithubWebsite_OnRequestNavigate(object sender, RequestNavigateEventArgs e)
         {
-            Process.Start("explorer.exe", "https://github.com/HandBrake/HandBrake/issues");
+            Process.Start("explorer.exe", "https://github.com/Eclipse-Community/StickShift/issues");
         }
 
         private void DocWebsite_OnRequestNavigate(object sender, RequestNavigateEventArgs e)
