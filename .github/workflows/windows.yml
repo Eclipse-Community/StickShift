@@ -9,7 +9,7 @@ concurrency:
 jobs:
   build_mingw:
     name: CLI / LibHB
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v4
 
@@ -62,11 +62,11 @@ jobs:
         cd build
         make pkg.create.zip
 
-    - name: Upload HandBrakeCLI
+    - name: Upload StickShiftCLI
       uses: actions/upload-artifact@v3
       with:
-        name: HandBrakeCLI
-        path: ./build/HandBrakeCLI.exe
+        name: StickShiftCLI
+        path: ./build/StickShiftCLI.exe
 
     - name: Upload LibHB
       uses: actions/upload-artifact@v3
